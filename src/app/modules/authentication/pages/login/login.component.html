@@ -1,0 +1,25 @@
+<section id="login">
+  <form #authForm="ngForm" (ngSubmit)="handleSubmit()">
+    <div>
+      <label>Nome</label>
+      <input
+        required
+        type="text"
+        name="name"
+        [(ngModel)]="authenticationForm.name"
+      />
+    </div>
+
+    <div>
+      <label>Como quer ser chamado ?</label>
+      <input
+        required
+        type="text"
+        name="nickname"
+        [(ngModel)]="authenticationForm.nickname"
+      />
+    </div>
+
+    <button type="submit" [disabled]="!authForm.form.valid">Entrar</button>
+  </form>
+</section>

@@ -1,0 +1,8 @@
+@import "styles-app.scss";
+
+#conversation {
+  @apply py-0 h-[84vh];
+  @extend .app-container;
+
+  overflow-y: auto;
+}

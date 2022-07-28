@@ -1,0 +1,13 @@
+@import "styles-app.scss";
+
+body {
+  color: $text;
+  @apply text-base;
+  background: $bg-primary;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  transition: all;
+  scroll-behavior: smooth;
+}

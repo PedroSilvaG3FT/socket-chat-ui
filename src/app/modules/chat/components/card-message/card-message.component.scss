@@ -1,0 +1,18 @@
+@import "styles-app.scss";
+
+#card-message {
+  @apply flex flex-col mb-3;
+
+  > article {
+    @apply w-8/12 py-3 px-2 rounded;
+    background: $primary;
+
+    &.sender {
+      @apply self-end;
+    }
+
+    &.receiver {
+      @apply self-start;
+    }
+  }
+}

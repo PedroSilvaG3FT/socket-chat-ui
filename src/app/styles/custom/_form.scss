@@ -1,0 +1,53 @@
+.form-control {
+  @apply w-full h-12 py-1 px-3 block rounded border border-solid border-gray-700;
+  color: $bg-primary;
+
+  &::placeholder {
+    @apply text-gray-700;
+    opacity: 0.85;
+  }
+}
+
+.form-group {
+  @apply w-auto mb-7;
+
+  > label {
+    @apply block mb-1;
+  }
+
+  > input,
+  > select,
+  > textarea {
+    @extend .form-control;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  > textarea {
+    @apply h-auto;
+  }
+
+  > span {
+    @apply text-sm absolute mt-1 text-red-500;
+  }
+}
+
+.input-group {
+  @apply flex justify-between p-0;
+  @extend .form-control;
+
+  > input {
+    @apply w-full rounded-r-none border-0 h-full;
+    @extend .form-control;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  :last-child {
+    @apply w-1/5;
+  }
+}

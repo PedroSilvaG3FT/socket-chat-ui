@@ -1,0 +1,19 @@
+@import "styles-app.scss";
+
+#login {
+  @extend .app-container;
+  @apply h-screen flex flex-col items-center justify-center;
+
+  > form {
+    @apply p-8 bg-slate-100 shadow rounded-lg w-[40vw] sm:w-[90vw];
+
+    > div {
+      @extend .form-group;
+    }
+
+    > button {
+      @apply w-full;
+      @extend .btn-primary;
+    }
+  }
+}

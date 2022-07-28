@@ -1,0 +1,14 @@
+@import "styles-app.scss";
+
+#chat-header {
+  @extend .app-container;
+  @apply h-[8vh] bg-slate-500 flex items-center justify-between relative;
+
+  > button {
+    @apply flex items-center;
+
+    > i {
+      @apply mr-2;
+    }
+  }
+}

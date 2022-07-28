@@ -1,0 +1,19 @@
+.btn {
+  @apply rounded h-12 px-6 border;
+
+  &:disabled {
+    @apply opacity-80 cursor-not-allowed;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+
+  color: $bg-primary;
+  background: $primary;
+  border-color: $primary;
+
+  &:disabled {
+    opacity: 0.8;
+  }
+}

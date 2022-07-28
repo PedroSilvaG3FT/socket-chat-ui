@@ -1,0 +1,5 @@
+<section id="chat">
+  <chat-header></chat-header>
+  <chat-conversation [messages]="messages"></chat-conversation>
+  <chat-form-message (onSubmit)="sendMessage($event)"></chat-form-message>
+</section>

@@ -1,0 +1,25 @@
+@import "styles-app.scss";
+
+#form-message {
+  @extend .app-container;
+  @apply h-[8vh] py-2 bg-slate-500 flex items-center;
+
+  > form {
+    @apply w-full flex items-center justify-between;
+
+    > div {
+      @apply w-full mb-0;
+      @extend .form-group;
+
+      > textarea {
+        @apply resize-none;
+      }
+    }
+
+    > button {
+      @apply w-14 h-12 ml-4 flex items-center justify-center rounded-full;
+      background: $secondary;
+      color: $bg-primary;
+    }
+  }
+}

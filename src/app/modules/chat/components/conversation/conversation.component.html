@@ -1,0 +1,7 @@
+<section id="conversation">
+  <chat-card-message
+    *ngFor="let item of messages"
+    [author]="item.authorType"
+    [message]="item.message"
+  ></chat-card-message>
+</section>
