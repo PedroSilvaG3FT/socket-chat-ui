@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  SOCKET_URL: 'localhost:3000',
+  SOCKET_URL: 'https://socket-chat-ps.herokuapp.com/',
 };
